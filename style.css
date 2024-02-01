@@ -1,16 +1,13 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-
-.h-color{
-  background-color: #FF9A4B;
+header {
   height: 50px;
-  width: 100%;
+  background-color: #ff9a4b;
 }
-
 
 main {
   width: 960px;
@@ -18,7 +15,7 @@ main {
   display: flex;
 }
 
-.blog-box{
+.step-box1 {
   width: 300px;
   margin-right: 30px;
   padding: 10px;
@@ -26,7 +23,11 @@ main {
   background-color: #eee;
 }
 
-.blog-box1{
+.step-box1:last-child {
+  margin-right: 0;
+}
+
+.step-box2 {
   width: 300px;
   margin-right: 30px;
   padding: 10px;
@@ -34,21 +35,38 @@ main {
   background-color: #eee;
 }
 
-.blog-img1{
+.step-box2:last-child {
+  margin-right: 0;
+}
+
+.step-box3 {
+  width: 300px;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
+.step-box3:last-child {
+  margin-right: 0;
+}
+
+
+.step-img1 {
   height: 150px;
   background-image: url(img/flow01.png);
   background-position: bottom;
   background-size: cover;
 }
 
-.blog-img2{
+.step-img2 {
   height: 150px;
   background-image: url(img/flow02.png);
   background-position: bottom;
   background-size: cover;
 }
 
-.blog-img3{
+.step-img3 {
   height: 150px;
   background-image: url(img/flow03.png);
   background-position: bottom;
@@ -63,14 +81,13 @@ main {
   color: #fff;
 }
 
-.blog-heading{
-    margin: 15px 0 5px;
+.title {
+  margin: 15px 0 5px;
 }
 
-.f-color{
-  background-color: #AAAAAA;
+footer {
   height: 50px;
-  width: 100%;
+  background-color: #aaa;
 }
 
 
@@ -80,17 +97,35 @@ main {
     width:100%;
   }
 
-  .blog-box{
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .blog-box1{
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
+.step-box1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
 }
 
+.step-box2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
+.step-box3 {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  position: relative;
+  background-color: #eee;
+}
+
+
+
+
+}
